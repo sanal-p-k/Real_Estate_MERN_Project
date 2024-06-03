@@ -24,7 +24,7 @@ This is a prototype of a real estate web application designed to showcase apartm
 <strong>Frontend:</strong> HTML, CSS, JavaScript, React<br>
 <strong>Backend:</strong> Node.js, Express.js<br>
 <strong>Database:</strong> MongoDB<br>
-<strong>Others:</strong> Bootstrap, Google Maps API
+<strong>Others:</strong> Bootstrap
 </p>
 
 <h2>Usage</h2>
