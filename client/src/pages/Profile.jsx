@@ -1,23 +1,22 @@
-import { useSelector } from 'react-redux';
-import { useRef, useState, useEffect } from 'react';
 import {
   getDownloadURL,
   getStorage,
   ref,
   uploadBytesResumable,
 } from 'firebase/storage';
+import { useEffect, useRef, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { app } from '../firebase';
 import {
-  updateUserStart,
-  updateUserSuccess,
-  updateUserFailure,
   deleteUserFailure,
   deleteUserStart,
   deleteUserSuccess,
   signOutUserStart,
+  updateUserFailure,
+  updateUserStart,
+  updateUserSuccess,
 } from '../redux/user/userSlice';
-import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 export default function Profile() {
   const fileRef = useRef(null);
   const { currentUser, loading, error } = useSelector((state) => state.user);
